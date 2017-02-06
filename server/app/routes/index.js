@@ -11,5 +11,8 @@ module.exports  = function(app) {
         .get(api.listaAnterior);
         
     app.route('/negociacoes/retrasada')
-        .get(api.listaRetrasada);    
+        .get(api.listaRetrasada);  
+        
+    app.route('/negociacoes')
+        .post(api.cadastraNegociacao);          
 };
